@@ -9,7 +9,7 @@ pip install -r requirements.txt
 In order to run the application you then need to run Flask.
 The following instructions are abbreviated from the [Flask quickstart guide](http://flask.palletsprojects.com/en/1.1.x/quickstart/).
 If you prefer there are also [full installation instructions](http://flask.palletsprojects.com/en/1.1.x/installation/#python-version)
-and instruction for [deployement](https://flask.palletsprojects.com/en/1.1.x/deploying/#deployment).
+and instructions for [deployment](https://flask.palletsprojects.com/en/1.1.x/deploying/#deployment).
 
 
 To run the application you can either use the flask command or python’s -m switch with Flask. Before you can do that you need to tell your terminal the application to work with by exporting the FLASK_APP environment variable:
