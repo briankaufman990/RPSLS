@@ -2,6 +2,7 @@ from flask import Flask, request, jsonify
 from flask_cors import CORS
 import json
 import random
+import requests
 
 app = Flask(__name__)
 cors = CORS(app)
@@ -33,16 +34,24 @@ def choices():
 
 @app.route('/choice', methods=['GET'])
 def choice():
-    return jsonify(random.choice(choices_list))
+
+    #using the random number endpoint provided (1-100) to generate a random number in the appropriate range
+    content = requests.get('https://codechallenge.boohma.com/random').json()
+    random_choice = content['random_number'] % 5
+    return jsonify(choices_list[random_choice])
 
 @app.route('/play', methods=['POST'])
 def play():
     
-    #I need to use force=True here because the mimetype isn't actually of type applicaton/json
+    #I need to use force=True here because the mimetype in the header isn't actually of type applicaton/json
     content = request.get_json(force=True)
     
     player_choice = content['player']
-    computer_choice = random.randrange(1,5)
+
+    #using the random number endpoint provided (1-100) to generate a random number in the appropriate range
+    content = requests.get('https://codechallenge.boohma.com/random').json()
+    computer_choice = (content['random_number'] % 5) + 1
+
     
     diff = (player_choice - computer_choice) % 5
     results =""
