@@ -1,4 +1,4 @@
-# RPSLS
+# Rock Paper Scissors Lizard Spock
 
 RPSLS.py is made to run with Flask. In order to run it as a simple builtin server, make sure Flask and it's dependencies are installed using:
 ```
