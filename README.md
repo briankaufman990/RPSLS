@@ -4,6 +4,7 @@ RPSLS.py is made to run with Flask. In order to run it as a simple builtin serve
 ```
 pip install -r requirements.txt
 ```
+If you need to install pip, you can find it [here](https://pip.pypa.io/en/stable/installing/).
 
 
 In order to run the application you then need to run Flask.
