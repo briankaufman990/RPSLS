@@ -35,9 +35,9 @@ $ python -m flask run
 ---
 ### Troubleshooting
 
-⋅⋅* If you need to install pip, you can find it [here](https://pip.pypa.io/en/stable/installing/).
+* If you need to install pip, you can find it [here](https://pip.pypa.io/en/stable/installing/).
 
-⋅⋅* If you are on a mac and get an error about uninstalling six, first try using:
+* If you are on a mac and get an error about uninstalling six, first try using:
 ```
 pip install --ignore-installed six
 ```
