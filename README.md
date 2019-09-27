@@ -6,7 +6,7 @@ pip install -r requirements.txt
 ```
 If you need to install pip, you can find it [here](https://pip.pypa.io/en/stable/installing/).
 
-If you are on a mac and get an error about installing six, try using:
+If you are on a mac and get an error about uninstalling six, first try using:
 ```
 pip install --ignore-installed six
 ```
