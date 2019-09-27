@@ -1,6 +1,6 @@
 # RPSLS
 
-RPSLS.py is made to run with Flask. In order to run it as simple builtin server, make sure you Flask and it's dependencies are installed using:
+RPSLS.py is made to run with Flask. In order to run it as simple builtin server, make sure Flask and it's dependencies are installed using:
 ```
 pip install -r requirements.txt
 ```
