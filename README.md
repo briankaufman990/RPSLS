@@ -4,13 +4,14 @@ RPSLS.py is made to run with Flask. In order to run it as a simple builtin serve
 ```
 pip install -r requirements.txt
 ```
+---
 If you need to install pip, you can find it [here](https://pip.pypa.io/en/stable/installing/).
 
 If you are on a mac and get an error about uninstalling six, first try using:
 ```
 pip install --ignore-installed six
 ```
-
+---
 
 In order to run the application you then need to run Flask.
 The following instructions are abbreviated from the [Flask quickstart guide](http://flask.palletsprojects.com/en/1.1.x/quickstart/).
